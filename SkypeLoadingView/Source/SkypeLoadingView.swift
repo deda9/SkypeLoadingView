@@ -45,6 +45,7 @@ class SkypeLoadingView: UIView {
     private func rotateAnimation(_ rate: Float, x: CGFloat, y: CGFloat, size: CGSize) -> CAAnimationGroup {
         let fromScale = 0.9 - rate
         let toScale = 0.1 + rate
+        print(0.15 + rate)
         let timeFunc = CAMediaTimingFunction(controlPoints: 0.5, 0.15 + rate, 0.25, 1)
         
         let scaleAnimation = Init(CABasicAnimation(keyPath: "transform.scale")) {
